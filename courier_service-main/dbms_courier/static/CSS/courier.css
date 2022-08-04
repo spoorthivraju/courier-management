@@ -1,0 +1,48 @@
+body{
+	/*background:url(../pink2.jpg) no-repeat;
+	background-size: cover;*/
+    background-color: rgb(232, 179, 248);
+	background-position: center;
+	margin: 0;
+
+
+}
+
+h2 {
+			border: 5px solid black;
+			background-color: rgb(14, 12, 13);
+			font-family: Century Gothic;
+			padding: 30px;
+			color: rgba(247, 119, 236, 0.959);
+		}
+table.table {
+			background-color: powderblue;
+			border: 4px solid rgb(17, 6, 15);
+            box-sizing: border-box;	
+            width: 12cm;
+            height: 6cm;
+		}
+
+        th.customer {
+	        font-family: Century Gothic;
+			text-align: left;
+		}
+
+input.text{
+    font-family: Century Gothic;
+		
+			background-color: rgb(241, 195, 110);
+}
+input.password{
+    font-family: Century Gothic;
+	background-color: rgb(241, 195, 110);
+}
+
+.button{    
+    background-color: rgba(240, 180, 235, 0.959);
+    color: rgba(170, 42, 159, 0.959);;
+    padding: 3px;
+    cursor: pointer;
+
+    
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/25f7fcac2d.js" crossorigin="anonymous"></script>
+<!-- java scripts -->
+<link rel="stylesheet" href="../css/styles.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    <div class="container-fluid coloured-section">
+
+  
+        <!-- Nav Bar -->
+       
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <a class="navbar-brand" href="/back">Home</a>
+                <ul class="navbar-nav">
+            
+  
+                    <li class="nav-item">
+                        <a class="nav-link" href="/option">Admin</a> <!--basically like its already donated-->
+                    </li>
+                    
+                </ul>
+            </nav>
+    
+
+</div>
+<div class="jumbotron"style="background-color:#f7f7f7;">
+    <h1>details</small> </h1>
+    <hr class="my-4">
+    <table class="table table-striped">
+      <tr>
+        <th>S_ID</th>
+        <th>S_name</th>
+        <th>phone no</th>
+        <th>Package_ID</th>
+        <th>House no</th>
+        <th>Street no</th>
+        <th>Branch ID</th>
+      </tr>
+      {% for detail in details %}
+        <tr>
+          <td>{{detail[0]}}</td>
+          <td>{{detail[1]}}</td>
+          <td>{{detail[2]}}</td>
+          <td>{{detail[3]}}</td>
+          <td>{{detail[4]}}</td>
+          <td>{{detail[5]}}</td>
+          <td>{{detail[6]}}</td>
+         
+          
+        </tr>
+      {% endfor %}
+    </table>
+    </div>
+    
+</body>
+</html>

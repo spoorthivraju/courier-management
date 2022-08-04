@@ -1,0 +1,26 @@
+body{
+/* background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../) no-repeat;*/
+    background-color: rgb(10, 10, 53);
+    text-align: center;
+    font-family: Century Gothic;
+}
+h1 {
+color: white;
+font-size: 50px;
+}
+h2 {
+color: white;
+}
+
+p {
+    font-size: 20px;
+color: yellow;
+}
+
+footer {
+color: white;
+position: relative;
+transform: translate(-1%,-1%);
+
+
+}

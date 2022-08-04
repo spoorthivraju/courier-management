@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>courier Login Page</title>
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css/courier.css')}}">
+</head>
+<body>
+    <header><h2 align="center">WELCOME COURIER !</h2></header>
+	<br>
+<form class="form" name="loginForm" method="post" action="courier_login.html">
+<table class ="table" width="40%" align="center">
+
+<tr >
+<td colspan=2><center><font size=4><b>Courier Login</b></font></center></td>
+</tr>
+
+<tr>
+<th class="courier">Courier ID</th>
+<td><input type="text" size=25 name="userid" required></td>
+</tr>
+
+<tr>
+    <th class="courier">password</th> 
+<td><input type="Password" size=25 name="pwd" required></td>
+</tr>
+
+
+<tr>
+    <th class="courier"> login</th>
+    <td><input type="submit" class="button" onclick="return check(this.form)" value="Login" ></td>
+</tr>
+<tr>
+    <th class="courier"></th>
+<td ><input type="Reset" class="button"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "courier@123" && form.pwd.value == "courier")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or courier_ID")
+	return false;
+}
+}
+</script>
+<a href="/back" class="button1">
+	<input style="background-color: rgb(41, 114, 173);
+			      color: yellow;
+			      padding: 5px;
+		          cursor: pointer;
+		          margin-top: 50px;
+		          margin-left: 350px;" type="Submit" value="GO BACK"  required></a>
+
+</body>
+</html>

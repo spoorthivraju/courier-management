@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8 ">
+	<title>Customer Register</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/customer.css')}}">
+</head>
+<body >
+{% block body %}
+	<header><h2 align="center">WELCOME Receiver !</h2></header>
+	<br>
+<table class="table" align="center">
+	<caption>Receiver REGISTER</caption>
+	<form action="{{url_for('customer')}}" method="POST">
+		<tr >
+			<th class="customer">R_Id:</th>
+			<td>
+			<input type="text" name="R_Id" class="text" placeholder ="Enter your ID" value="{{request.form.R_Id}}" required>
+			</td>
+		</tr>
+		<tr >
+		<th class="customer">Name:</th>
+		<td>
+    	<input type="text" name="Name" class="text" placeholder ="Enter your Name" value="{{request.form.Name}}" required>
+        </td>
+	</tr>
+	
+	<tr>
+		<th class="customer">Phone:</th>
+		<td>
+    	<input type="text" name="Phone" class="text" placeholder ="Enter your Phone Num" value="{{request.form.Phone}}" required>
+        </td>
+	</tr>
+	<tr>
+		<th class="customer">Package_ID:</th>
+		<td>
+    	<input type="text" name="Package_ID" class="text" placeholder ="Enter Package_ID" value="{{request.form.Package_ID}}" required>
+        </td>
+	</tr>
+	
+	<tr>
+		<th class="customer">House_no:</th>
+		<td>
+    	<input type="text" name="House_no" class="text" placeholder ="Enter your house no" value="{{request.form.House_no}}" required>
+        </td>
+	</tr>
+    <tr>
+		<th class="customer">street_no:</th>
+		<td>
+    	<input type="number" name="street_no" class="number" placeholder ="Enter your street no" value="{{request.form.street_no}}" required>
+        </td>
+	</tr>
+    <tr>
+		<th class="customer">Branch_ID:</th>
+		<td>
+    	<input type="number" name="RBranch_ID" class="number" placeholder ="Enter Branch_ID" value="{{request.form.RBranch_ID}}" required>
+        </td>
+	</tr>
+	<tr>
+		<td align="center" colspan="3">
+    	<input  type="Submit" onclick="alert('Receiver detailes entered')" value="Enter" class="button" required>
+		
+        </td>
+	
+    </tr>
+
+	
+	
+    </form>
+</table>
+<a href="/back" class="button1">
+	<input style="background-color: rgb(41, 114, 173);
+			      color: yellow;
+			      padding: 5px;
+		          cursor: pointer;
+		          margin-top: 50px;
+		          margin-left: 350px;" type="Submit"  value="GO BACK"  required></a>
+{% endblock %}
+
+</body>
+</html>
